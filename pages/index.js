@@ -1,8 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'react-bootstrap';
 
 export default function Home() {
   return (
-   <div>hello</div>
+   <Button style={{padding:50,margin:50}}>hello</Button>
   )
 }
