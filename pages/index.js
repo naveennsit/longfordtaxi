@@ -172,7 +172,7 @@ export default function Home() {
              </ul>
            </div>
            <div className="copy-right">
-             @copyright 2020. All rights reserved
+             @copyright 2022. All rights reserved
            </div>
          </div>
        </div>
