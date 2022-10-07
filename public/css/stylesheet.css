@@ -1,0 +1,146 @@
+html {padding: 0px; margin: 0px; position: relative; min-height: 100%;}
+body {padding: 0px; padding-top: 72px; margin: 0px; min-height: 100%; position: relative; overflow: auto;}
+
+header {
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 72px;
+    line-height: 72px;  
+    z-index: 4;
+}
+
+/*header css start here*/
+
+header .header-navigation {background: #ffcf03; padding: 0px 30px;}
+.header-navigation ul {display: flex; align-items: center; margin: 0px; padding: 0px; list-style: none;}
+.header-navigation ul li a {margin-right: 20px; color: #373131; text-decoration: none; display: block;}
+.header-navigation ul li a:hover {font-weight: 500;}
+
+/*header css end here*/
+
+/*sidebar css start here*/
+
+.overley, .sidebar {display: none;}
+
+.overley {position: fixed; background: rgb(51 51 51 / 12%); width: 100%; height: 100%; left: 0px; top: 0px; z-index: 5;}
+.sidebar {position: fixed; left: -300px; top: 0px; width: 250px; height: 100%; background: #fff; transition: 0.5s; z-index: 9;}
+.sidebar ul {list-style: none; padding: 0px 0px; margin: 30px 0px 0px ;}
+.sidebar ul li a {padding: 7px 15px; display: block; text-decoration: none; color: #3f4347;}
+.sidebar ul li a:hover {color: #ffcf03;}
+
+.menu-bar {margin-right: 5px; margin-top: 5px; cursor: pointer; display: none;}
+.menu-bar .bar {width: 30px; height: 3px; display: block; background: #333; border-radius: 6px; margin-bottom: 6px;}
+.menu-bar .bar.bar2 {margin-bottom: 0px;}
+.brand-logo {display: flex; align-items: center;}
+.brand-logo a img {height: 72px;}
+
+/*sidebar css end here*/
+
+/*banner css start here*/
+
+.banner-container {padding: 0px 30px; border-bottom: 1px solid #ffcf03;}
+.banner-container .banner-wrappr {display: flex; align-items: center; justify-content: space-between;}
+.banner-img img {width: 100%;}
+
+.banner-caption {width: 40%;}
+.banner-caption h1 {font-size: 68px; font-weight: 700;}
+.banner-caption h1 span {display: block; color:#ffcf03;}
+.banner-img {width: 60%; text-align: center;}
+
+
+/*banner css end here*/
+
+/*about us css start here*/
+
+.about-us-section {padding: 72px 0px;}
+.heading {font-size: 48px; text-align: center; font-weight: 700; text-transform: uppercase; margin-bottom: 20px;}
+.about-us-section .about-us-wrappr p {text-align: center; color: #8b9aa8;}
+
+/*about us css end here*/
+
+
+/*service css start here*/
+
+.service-section {padding: 54px 0px; background: #fffdf2;}
+.heading {font-size: 48px; text-align: center; font-weight: 700; text-transform: uppercase; margin-bottom: 20px;}
+.about-us-section .about-us-wrappr p {text-align: center; color: #8b9aa8;}
+.service-box {display: flex; flex-wrap: wrap; width: 100%;}
+.service-box .service-item {background: #fff; margin-bottom: 30px; position: relative; box-shadow: 0 0 6px rgb(255 207 3 / 26%); width: calc(100% / 3 - 20px); margin-right: 20px; padding: 20px;
+    text-align: center; border-radius: 8px; min-height: 140px;}
+.service-item .service-price {color: #eabe03; font-size: 42px; font-weight: 600;}
+.service-item .service-title {color: #b0adad;}
+.service-item .people {color: #bebebe;}
+
+.parallax-section {background-image: url("../img/parallax-img.png"); padding: 100px 0px; position: relative; min-height: 350px; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}
+.parallax-section .parallax-txt {text-align: center; font-size: 42px; color: #fff; font-weight: 700;}
+.parallax-section:before {content: ''; background: rgb(19 47 67 / 73%); height: 100%; position: absolute; bottom: 0px; width: 100%;}
+.parallax-wrappr {position: absolute; text-align: center;}
+.parallax-wrappr .know-more {background: #ffcf03; margin-top: 20px;}
+
+/*service css end here*/
+
+
+.work-time-section {padding: 54px 0px;}
+.timing-box ul {list-style: none; padding: 0px; margin: 0px; display: flex; flex-wrap: wrap; width: 100%;}
+.timing-box ul li {padding: 10px; border-radius: 30px; background: #ddd; margin-right: 10px; text-align: center; align-items: center; width: calc(100% / 3 - 20px); margin-bottom: 20px; margin-right: 20px;}
+
+
+footer {background: #1d1a1a;}
+.footer-wrappr {padding: 20px 0px;}
+.footer-logo {background: #ffcf03; border-radius: 50%; text-align: center; width: 100px; height: 100px; line-height: 100px; overflow: hidden; margin: 0px auto}
+.footer-logo img {width: 80px;}
+
+.footert-link {margin: 40px 0px;}
+.footert-link ul {list-style: none; padding: 0px; margin: 0px; display: flex; align-items: center; justify-content: space-between;}
+.footert-link ul li a {color: #fff; text-decoration: none;}
+.copy-right {color: #9b9494; text-align: center; border-top: 1px solid #2e2d2d; padding-top: 15px;}
+
+
+
+@media only screen and (max-width: 1199px) {
+  
+	.banner-caption h1 {font-size: 54px;}
+	.parallax-section {min-height: 450px;}
+
+}
+
+@media only screen and (max-width: 991px) {
+  
+	.service-box .service-item {width: calc(100% / 2 - 20px);}
+	.parallax-section {padding: 70px 0px;}
+
+}
+
+@media only screen and (max-width: 767px) {
+  
+	.overley.open {display: block;}
+	.sidebar {display: block;}
+	.sidebar.open {left: 0px; transition: 0.5s;}
+	.right-navigation {display: none;}
+	.menu-bar {display: block;}
+
+	.banner-container .banner-wrappr {display: block; text-align: center;}
+	.banner-caption {width: 100%; margin: 40px 0px;}
+	.banner-img {width: 100%;}
+	.heading {font-size: 32px;}
+
+	.parallax-section {min-height: 310px;}
+	.parallax-section .parallax-txt {font-size: 26px;}
+	.timing-box ul li {width: calc(100% / 2 - 20px);}
+
+}
+
+@media only screen and (max-width: 576px) {
+  
+	.service-box .service-item {width: calc(100% / 1 - 0px); margin: 0px 0px 20px;}
+	.timing-box ul li {width: calc(100% / 1 - 0px); margin-right: 0px;}
+
+}
+
+
+
+
+
+

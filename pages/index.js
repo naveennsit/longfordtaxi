@@ -4,6 +4,6 @@ import { Button } from 'react-bootstrap';
 
 export default function Home() {
   return (
-   <Button style={{padding:50,margin:50}}>hello</Button>
+    <div>hell</div>
   )
 }
