@@ -3,12 +3,12 @@ body {padding: 0px; padding-top: 72px; margin: 0px; min-height: 100%; position: 
 
 header {
 	position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 72px;
-    line-height: 72px;  
-    z-index: 4;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 72px;
+	line-height: 72px;
+	z-index: 4;
 }
 
 /*header css start here*/
@@ -60,15 +60,21 @@ header .header-navigation {background: #ffcf03; padding: 0px 30px;}
 
 /*about us css end here*/
 
+.book-cab {padding: 72px 0px; background: #fffdf2;}
+.book-wrappr {text-align: center;}
+.number img {width: 26px;}
+.number {font-size: 32px; margin-top: 20px;}
+.number-section .tile {font-size: 20px; color: #afafaf;}
+
 
 /*service css start here*/
 
-.service-section {padding: 54px 0px; background: #fffdf2;}
+.service-section {padding: 54px 0px;}
 .heading {font-size: 48px; text-align: center; font-weight: 700; text-transform: uppercase; margin-bottom: 20px;}
 .about-us-section .about-us-wrappr p {text-align: center; color: #8b9aa8;}
 .service-box {display: flex; flex-wrap: wrap; width: 100%;}
 .service-box .service-item {background: #fff; margin-bottom: 30px; position: relative; box-shadow: 0 0 6px rgb(255 207 3 / 26%); width: calc(100% / 3 - 20px); margin-right: 20px; padding: 20px;
-    text-align: center; border-radius: 8px; min-height: 140px;}
+	text-align: center; border-radius: 8px; min-height: 140px;}
 .service-item .service-price {color: #eabe03; font-size: 42px; font-weight: 600;}
 .service-item .service-title {color: #b0adad;}
 .service-item .people {color: #bebebe;}
@@ -100,21 +106,21 @@ footer {background: #1d1a1a;}
 
 
 @media only screen and (max-width: 1199px) {
-  
+
 	.banner-caption h1 {font-size: 54px;}
 	.parallax-section {min-height: 450px;}
 
 }
 
 @media only screen and (max-width: 991px) {
-  
+
 	.service-box .service-item {width: calc(100% / 2 - 20px);}
 	.parallax-section {padding: 70px 0px;}
 
 }
 
 @media only screen and (max-width: 767px) {
-  
+
 	.overley.open {display: block;}
 	.sidebar {display: block;}
 	.sidebar.open {left: 0px; transition: 0.5s;}
@@ -133,7 +139,7 @@ footer {background: #1d1a1a;}
 }
 
 @media only screen and (max-width: 576px) {
-  
+
 	.service-box .service-item {width: calc(100% / 1 - 0px); margin: 0px 0px 20px;}
 	.timing-box ul li {width: calc(100% / 1 - 0px); margin-right: 0px;}
 

@@ -79,6 +79,17 @@ export default function Home() {
          </div>
        </div>
      </div>
+     <div className="book-cab">
+       <div className="container">
+         <div className="book-wrappr">
+           <h2 className="heading">Book Your Cab</h2>
+           <div className="number-section">
+             <div className="tile">Call on this number and book your trip</div>
+             <div className="number"><img src="img/phone-call.png"/> 0833591608</div>
+           </div>
+         </div>
+       </div>
+     </div>
      <div className="service-section" id="price">
        <div className="container">
          <div className="service-wrappr">
@@ -177,6 +188,7 @@ export default function Home() {
          </div>
        </div>
      </footer>
+     <Script type="text/javascript" src="js/jquery.slim.min.js"></Script>
      <Script type="text/javascript" src="js/jquery.slim.min.js"></Script>
      <Script type="text/javascript" src="js/bootstrap.min.js"></Script>
      <Script type="text/javascript" src="js/popper.min.js"></Script>
